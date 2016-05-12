@@ -33,12 +33,11 @@ I also thought the Factory and Interface design was going to be interesting.
 I also implemented tests for the TftpWriter, TftpReader, and the TftpMessageFactory parsing in src/greilly/tests.
 
 I did not implement the TftpInit class, which I think would include parsing RRQ and WRQ requests, checking for invalid or 
-un-writeable or un-readable file paths, any security that the service would need, and then spinning up threads for TftpReader 
-or TftpWriter as needed.
+un-writeable or un-readable file paths, any security that the service would need, and then spinning up threads for TftpReader or TftpWriter as needed.  
 
 If I had this project to do again, I would write the TftpMessageFactoryTest earlier -- the parsing was a little tricky to 
 get right, and it was time-consuming to track down those bugs in the context of the Reader and Writer.
 
-If I were doing it again, I might choose to implementing the TftpInit and one of Reader or Writer.  It was fun to do both, because 
+If I were doing it again, I might choose to implement the TftpInit and one of Reader or Writer.  It was fun to do both, because 
 I could do a round-trip test, but the two classes were pretty similar, and working on TftpInit instead could have been 
 a good exercise.
