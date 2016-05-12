@@ -30,6 +30,8 @@ the fields of the class
 I chose these classes to implement because the Read and Write functionality is core to Tftp functionality. 
 I also thought the Factory and Interface design was going to be interesting.  
 
+I also implemented tests for the TftpWriter, TftpReader, and the TftpMessageFactory parsing in src/greilly/tests.
+
 I did not implement the TftpInit class, which I think would include parsing RRQ and WRQ requests, checking for invalid or 
 un-writeable or un-readable file paths, any security that the service would need, and then spinning up threads for TftpReader 
 or TftpWriter as needed.
